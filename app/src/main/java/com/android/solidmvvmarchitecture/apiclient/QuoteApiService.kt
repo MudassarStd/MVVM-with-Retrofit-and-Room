@@ -10,6 +10,11 @@ interface QuoteApiService {
     @GET("/quotes")
     suspend fun getQuotes( @Query("page") page : Int) : Response<Quotes>
 
+//      @GET("/v1/quotes")
+//    suspend fun getQuotes( @Query("category") category : String) : Response<SimpleQuote>
+
+
+
     // Base URL + /quotes? + page=1
     //            /get quotes from where page == 1
 }
